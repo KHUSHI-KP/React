@@ -1,18 +1,11 @@
 import StatCard from "./StatCard";
 
 function StatsPanel({ tasks }) {
+    
   const totalTasks = tasks.length;
-
-  const completedTasks = tasks.filter(
-    (task) => task.completed
-  ).length;
-
+  const completedTasks = tasks.filter( (task) => task.completed).length;
   const pendingTasks = totalTasks - completedTasks;
-
-  const completionPercentage =
-    totalTasks === 0
-      ? 0
-      : Math.round((completedTasks / totalTasks) * 100);
+  const completionPercentage = totalTasks === 0 ? 0  : Math.round((completedTasks / totalTasks) * 100);
 
   return (
     <section className="stats-panel">

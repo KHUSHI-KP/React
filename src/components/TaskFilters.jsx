@@ -12,7 +12,7 @@ function TaskFilters({
     <section className="task-filters">
       <h2>Search & Filters</h2>
 
-      {/* Search */}
+     
       <input
         type="text"
         placeholder="Search tasks..."
@@ -20,7 +20,7 @@ function TaskFilters({
         onChange={(event) => setSearch(event.target.value)}
       />
 
-      {/* Status Filter */}
+   
       <select
         value={status}
         onChange={(event) => setStatus(event.target.value)}
@@ -30,7 +30,7 @@ function TaskFilters({
         <option value="Pending">Pending</option>
       </select>
 
-      {/* Priority Filter */}
+  
       <select
         value={priority}
         onChange={(event) => setPriority(event.target.value)}
@@ -41,7 +41,7 @@ function TaskFilters({
         <option value="High">High</option>
       </select>
 
-      {/* Category Filter */}
+     
       <select
         value={category}
         onChange={(event) => setCategory(event.target.value)}
